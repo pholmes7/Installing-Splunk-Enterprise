@@ -82,12 +82,69 @@ Once you are on the command line type “sudo su”. This gives you root user ab
 Type in “useradd splunk”. Type in “mkdir /opt/splunk”. This is making a new directory where you will put your splunk instance.
 </p>
 
+<p> <img src="https://i.imgur.com/JKGYEA7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>  
 <p>
 Then type “ cd /opt/”. You are changing the directory.
 </p>
 
-<p> <img src="https://i.imgur.com/JKGYEA7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p> <img src="https://i.imgur.com/fwfncJ5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>  
 <p>
 Take the copied wget link and paste it into the cmd line. It will now install your Splunk instance
 </p>
+
+
+<p> <img src="https://i.imgur.com/mkuLMVY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>  
+<p>Type “ls” then copy the output into your sticky note.</p>
+
+<p> <img src="https://i.imgur.com/aO6JmER.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+<p>You have to un tar the file by replacing the given file with file path you just copied. Use tar xvzf “ your file path” -C /opt  </p>
+<p>Copy the new cmd into your cmd line. You are now installing Splunk. </p>
+
+
+<p> <img src="https://i.imgur.com/UO5Urb3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+<p>Type “sudo /opt/splunk/bin/splunk start --accept-license”</p> 
+
+<p> <img src="https://i.imgur.com/cChv1Sm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+
+<p>It will ask for a username - put your first name
+
+In the password portion - put “Password”</p> 
+
+<p> <img src="https://i.imgur.com/Z1vsKYY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+<p> Once it done grab the Splunk Web Interface and paste it into your sticky note. </p>
+
+<h3>Logging into Splunk Instance</h3>
+
+<p> <img src="https://i.imgur.com/ZV9khkx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+<p>Go to back to your Splunk Enterprise Instance with AWS. Click on Networking. </p>
+
+
+<p> <img src="https://i.imgur.com/SCzo2zN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+<p>Add a new rule. Click Custom → “All TCP” → Create. </p>
+<p>In a real world environment - you wouldn’t do this because you are opening up every port. </p>
+
+<p> <img src="https://i.imgur.com/EVSo0gK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+<p>Go to sticky note and type in “http:// “your public IP”:8000”</p> 
+
+<p> <img src="https://i.imgur.com/0R0CjJ7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+<p>Take that address and paste it into web browser. Now type in the username and password you used to create the Splunk instance earlier.</p>
+
+<p> <img src="https://i.imgur.com/vib6MQk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p> 
+<p>
+Congrats you have created and installed a Splunk environment within a Linux VM!
+</p>
+
+
+
