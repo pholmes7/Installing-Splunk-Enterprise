@@ -76,7 +76,7 @@ Go back to AWS and click on your instance. Click “Connect using SSH”
 Once you are on the command line type “sudo su”. This gives you root user ability. Then type in “passwd” and make a password. Type the password in again to lock in your password.
 </p>
 
-<p> <img src="https://i.imgur.com/1UTUZw2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p> <img src="https://i.imgur.com/JKGYEA7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>  
 <p>
 Type in “useradd splunk”. Type in “mkdir /opt/splunk”. This is making a new directory where you will put your splunk instance.
@@ -85,6 +85,9 @@ Type in “useradd splunk”. Type in “mkdir /opt/splunk”. This is making a 
 <p>
 Then type “ cd /opt/”. You are changing the directory.
 </p>
+
+<p> <img src="https://i.imgur.com/JKGYEA7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>  
 <p>
 Take the copied wget link and paste it into the cmd line. It will now install your Splunk instance
 </p>
